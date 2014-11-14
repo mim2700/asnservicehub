@@ -1,0 +1,37 @@
+C:\Users\bhabesh>rhc app-create asnservice tomcat6
+DL is deprecated, please use Fiddle
+Using jbossews-1.0 (Tomcat 6 (JBoss EWS 1.0)) for 'tomcat6'
+
+Application Options
+-------------------
+Domain:     service01
+Cartridges: jbossews-1.0
+Gear Size:  default
+Scaling:    no
+
+Creating application 'asnservice' ... done
+
+
+Waiting for your DNS name to be available ... done
+
+You do not have git installed, so your application's git repo will not be cloned
+
+
+Your application 'asnservice' is now available.
+
+  URL:        http://asnservice-service01.rhcloud.com/
+  SSH to:     545f95cae0b8cd3e3a00020f@asnservice-service01.rhcloud.com
+  Git remote: ssh://545f95cae0b8cd3e3a00020f@asnservice-service01.rhcloud.com/~/git/asnservice.git/
+
+Run 'rhc show-app asnservice' for more details about your app.
+---------------------------------------------------------------------------------------------
+Please make note of  these MySQL credentials again:
+  Root User: adminVLIVHBX
+  Root Password: KuwcV2TYZK7D
+URL: https://asnservice-service01.rhcloud.com/phpmyadmin/
+---------------------------------------------------------------------------------------------
+How-To: Keep a github repository and an OpenShift repository in sync
+https://forums.openshift.com/how-to-keep-a-github-repository-and-an-openshift-repository-in-sync
+
+------
+web template
