@@ -1,11 +1,14 @@
-<!doctype html>
-<html>
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
+<%@ taglib prefix="spring" uri="http://www.springframework.org/tags" %>
+<jsp:directive.page contentType="text/html;charset=UTF-8" />
+
 <head>
+	
 	    <!-- Bootstrap Core CSS -->
-    <link href="css/bootstrap.min.css" rel="stylesheet">
+   
 
     <!-- Custom CSS -->
-    <link href="css/modern-business.css" rel="stylesheet">
+<!--     <link href="/css/modern-business.css" rel="stylesheet"> -->
     
        <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -13,10 +16,38 @@
         <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
         <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
     <![endif]-->
+     <!-- image declaration -->
+    <spring:url value="/images/sentrum_mall_1.jpg" var="imgCarouselMall"/>
+    <spring:url value="/images/Asansol_Railway_Station.jpg" var="imgCarouselStation"/>
+    <spring:url value="/images/iisco.jpg" var="imgCarouselIndustry"/>
+    
+     <!-- CSS declaration -->
+    <spring:url value="/css/bootstrap.min.css" var="cssBootstrap"/>
+    <spring:url value="/css/modern-business.css" var="cssModernBusiness"/>
+    
+    <!-- JS declaration -->
+    <spring:url value="/js/bootstrap.js" var="jsBootstrap" />
+	<spring:url value="/js/jquery.js" var="jsJquery" />
+	
+	<!-- CSS implementation -->
+ 	<link href="${cssBootstrap}" rel="stylesheet" type="text/css">
+	<link href="${cssModernBusiness}" rel="stylesheet" type="text/css">
+
+    <!-- JS implementation -->
+       <script  type="text/javascript" src="${jsJquery}"></script>
+     <script  type="text/javascript" src="${jsBootstrap}"  ></script>
+
+     
+        <!-- Script to Activate the Carousel -->
+    <script>
+    $('.carousel').carousel({
+        interval: 5000 //changes the speed
+    })
+    </script>
     
 </head>
-<body>
-   <!-- Navigation -->
+
+
     <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
         <div class="container">
             <!-- Brand and toggle get grouped for better mobile display -->
@@ -27,7 +58,7 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a class="navbar-brand" href="index.html">Start Bootstrap</a>
+                <a class="navbar-brand" href="index.html"><Font color="red">Asansol</Font> Services</a>
             </div>
             <!-- Collect the nav links, forms, and other content for toggling -->
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
@@ -101,8 +132,3 @@
         </div>
         <!-- /.container -->
     </nav>
-
-
-	<h1><font color="red"> Asansol</font> Services</h1>
-</body>
-</html>
