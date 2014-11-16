@@ -6,6 +6,37 @@
          xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd"
          metadata-complete="false">
 
-         
+  	<servlet>
+		<servlet-name>service-context</servlet-name>
+		<servlet-class>org.springframework.web.servlet.DispatcherServlet</servlet-class>
+		<load-on-startup>1</load-on-startup>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>service-context</servlet-name>
+		<url-pattern>/</url-pattern>
+	</servlet-mapping>
+
+	<context-param>
+		<param-name>contextConfigLocation</param-name>
+		<param-value>/WEB-INF/service-context-servlet.xml</param-value>
+	</context-param>
+
+	<listener>
+		<listener-class>org.springframework.web.context.ContextLoaderListener</listener-class>
+	</listener>
+	
+	   <mime-mapping>    
+	          <extension>js</extension>        
+	          <mime-type>application/javascript</mime-type>        
+	      </mime-mapping>
+	   	   <mime-mapping>    
+	          <extension>css</extension>        
+	          <mime-type>text/css</mime-type>        
+	      </mime-mapping>
+
+<!-- 	<welcome-file-list> -->
+<!-- 		<welcome-file>index.html</welcome-file> -->
+<!-- 	</welcome-file-list> -->       
 </web-app>
 
