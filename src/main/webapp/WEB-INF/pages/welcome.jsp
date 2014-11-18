@@ -3,6 +3,7 @@
 <%@include file="uiconfig/menu.jsp"%>
 <%@include file="uiconfig/carousel/carouselWelcome.jsp" %>
 
+<div ><font color="red"><b>This website is in development stage and not in Beta or production</b></font></div>
    <!-- Page Content -->
     <div class="container">
 
