@@ -1,42 +1,54 @@
 <!DOCTYPE html>
 <%@include file="uiconfig/config.jsp"%>
+<%@include file="uiconfig/menu.jsp"%>
+<%@include file="uiconfig/carousel/carouselWelcome.jsp" %>
 
-    <!-- Header Carousel -->
-    <header id="myCarousel" class="carousel slide">
-        <!-- Indicators -->
-        <ol class="carousel-indicators">
-            <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-            <li data-target="#myCarousel" data-slide-to="1"></li>
-            <li data-target="#myCarousel" data-slide-to="2"></li>
-        </ol>
+   <!-- Page Content -->
+    <div class="container">
 
-        <!-- Wrapper for slides -->
-        <div class="carousel-inner">
-            <div class="item active">
-                <div class="fill" style="background-image:url('${imgCarouselMall}');"></div>
-                <div class="carousel-caption">
-                    <h2>Caption 1</h2>
+        <!-- Marketing Icons Section -->
+        <div class="row">
+            <div class="col-lg-12">
+                <h1 class="page-header">
+                    Welcome to Asansol Service
+                </h1>
+            </div>
+            <div class="col-md-4">
+                <div class="panel panel-default">
+                    <div class="panel-heading">
+                        <h4><i class="fa fa-fw fa-check"></i> Financial </h4>
+                    </div>
+                    <div class="panel-body">
+                        <p>All the financial direct and indirect services are available here. This services includes Banking, Post Offices, Mutual Funds, Equity and commodity markets, Insurences etc</p>
+                        <a href="#" class="btn btn-default">Learn More</a>
+                    </div>
                 </div>
             </div>
-            <div class="item">
-                <div class="fill" style="background-image:url('${imgCarouselStation}');"></div>
-                <div class="carousel-caption">
-                    <h2>Caption 2</h2>
+            <div class="col-md-4">
+                <div class="panel panel-default">
+                    <div class="panel-heading">
+                        <h4><i class="fa fa-fw fa-gift"></i> Communication </h4>
+                    </div>
+                    <div class="panel-body">
+                        <p>Telephone, Mobile - includes : prepaid & post paid, Internet - broad band, 3G and more. </p>
+                        <a href="#" class="btn btn-default">Learn More</a>
+                    </div>
                 </div>
             </div>
-            <div class="item">
-                <div class="fill" style="background-image:url('${imgCarouselIndustry}');"></div>
-                <div class="carousel-caption">
-                    <h2>Caption 3</h2>
+            <div class="col-md-4">
+                <div class="panel panel-default">
+                    <div class="panel-heading">
+                        <h4><i class="fa fa-fw fa-compass"></i> Transportation</h4>
+                    </div>
+                    <div class="panel-body">
+                        <p>Booking & Facilitates - Tour and Transportation including local and distance travel. This sector targets from very basic to luxury. 
+                        	From auto rickshaw to Four wheel drive. All facilities are under one roof.
+                        </p>
+                        <a href="#" class="btn btn-default">Learn More</a>
+                    </div>
                 </div>
             </div>
         </div>
+        <!-- /.row -->
+</div>
 
-        <!-- Controls -->
-        <a class="left carousel-control" href="#myCarousel" data-slide="prev">
-            <span class="icon-prev"></span>
-        </a>
-        <a class="right carousel-control" href="#myCarousel" data-slide="next">
-            <span class="icon-next"></span>
-        </a>
-    </header>
