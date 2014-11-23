@@ -11,17 +11,17 @@
         <div class="row">
             <div class="col-lg-12">
                 <h1 class="page-header">
-                    Welcome to Asansol Service
+                   <spring:message code="prop.asnservice.page.welcome.header.title"/>
                 </h1>
             </div>
             <div class="col-md-4">
                 <div class="panel panel-default">
                     <div class="panel-heading">
-                        <h4><i class="fa fa-fw fa-check"></i> Financial </h4>
+                        <h4><i class="fa fa-fw fa-check"></i> <spring:message code="prop.asnservice.page.welcome.panel.heading.financial.title"/> </h4>
                     </div>
                     <div class="panel-body">
-                        <p>All the financial direct and indirect services are available here. This services includes Banking, Post Offices, Mutual Funds, Equity and commodity markets, Insurences etc</p>
-                        <a href="#" class="btn btn-default">Learn More</a>
+                        <p><spring:message code="prop.asnservice.page.welcome.panel.heading.financial.text"/></p>
+                        <a href="#" class="btn btn-default"><spring:message code="prop.asnservice.button.learn.text"/></a>
                     </div>
                 </div>
             </div>
